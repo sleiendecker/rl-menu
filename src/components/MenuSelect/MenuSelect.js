@@ -22,12 +22,6 @@ const useStyles = makeStyles({
   item: { 
     color: "blue"
   }
-  // menu: {
-  //   position: "absolute",
-  //   bottom: "0",
-  //   left: "0",
-  //   padding: "48px"
-  // }
 }})
 
 

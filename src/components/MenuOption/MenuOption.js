@@ -3,11 +3,14 @@ import Button from '@material-ui/core/Button';
 
 import { makeStyles } from '@material-ui/core/styles';
 
-// import './MenuOption.css';
 
 const useStyles = makeStyles( theme => ({
   root: {
-    backgroundColor: '#282c34',
+     background: '#282c34',
+    '&:hover': {
+      background: 'linear-gradient(45deg, #97e4f0 30%, white 90%)',
+      color: '#005c6a'
+    },
     opacity: ".9",
     border: 0,
     borderRadius: 3,
