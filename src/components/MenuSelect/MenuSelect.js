@@ -45,7 +45,6 @@ export default function MenuSelect() {
     });
   }
   return (
-    // <div className="MenuSelect">
     <div className="MenuSelect">
       <ButtonGroup
         orientation="vertical"
