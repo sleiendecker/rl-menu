@@ -31,10 +31,9 @@ export default function MenuOption(props) {
   const classes = useStyles();
 
   const {label} = props;
-  return <Button
-  // style={{transformOrigin: 'skew("-20deg")'}}
-    className={classes.root}
-    >
+  return (
+    <Button className={classes.root}>
       {label}
-    </Button>;
+    </Button>
+  );
 }
