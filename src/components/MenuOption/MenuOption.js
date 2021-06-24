@@ -20,7 +20,11 @@ const useStyles = makeStyles( theme => ({
     width: "auto",
     padding: '0 30px',
     justifyContent: 'flex-start',
-    margin: theme.spacing(.5)
+    margin: theme.spacing(.5),
+    transform: 'skew(340deg)'
+  },
+  label: {
+    transform: 'skew(-340deg)'
   }
   
 }));
@@ -29,11 +33,16 @@ const useStyles = makeStyles( theme => ({
 
 export default function MenuOption(props) {
   const classes = useStyles();
+  console.log(classes);
 
   const {label} = props;
   return (
-    <Button className={classes.root}>
-      {label}
+    <Button
+      className={classes.root}
+      onClick={() => console.log(`Clicked ${label}`)}
+      >
+        <p class={classes.label}>{label}</p>
+      
     </Button>
   );
 }
